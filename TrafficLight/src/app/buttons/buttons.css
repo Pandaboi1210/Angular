@@ -1,0 +1,23 @@
+.bttn1{
+    background-color: rgb(112, 197, 112);
+     border: 2px;
+    border-radius: 15px;
+    width: 140px;
+    
+}
+.bttn1:hover{
+    background-color: rgb(112, 250, 112);
+    border: 2px;
+    border-radius: 15px;
+}
+.bttn2{
+    background-color: rgb(197, 109, 109);
+     border: 2px;
+    border-radius: 15px;
+      width: 140px;
+}
+.bttn2:hover{
+    background-color: rgb(250, 109, 109);
+     border: 2px;
+    border-radius: 15px;
+}

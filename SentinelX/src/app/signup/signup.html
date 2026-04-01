@@ -1,0 +1,27 @@
+<div class="container">
+   <form class="card" [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+     <h2>Sign Up</h2>
+      <input type="text" placeholder="Enter Username" formControlName="username" >
+      @if (signupForm.controls.username.touched && signupForm.controls.username.errors?.['required'])
+        {<small class="error"> Username is required </small> } 
+      @if (signupForm.controls.username.touched && signupForm.controls.username.errors?.['firstLetterCaps']) 
+        { <small class="error"> First letter must be capital </small> }
+      <input type="email" placeholder="Enter Email" formControlName="email" >
+      @if (signupForm.controls.email.touched && signupForm.controls.email.errors?.['required'])
+        { <small class="error"> Email is required </small> } 
+      @if (signupForm.controls.email.touched && signupForm.controls.email.errors?.['email']) 
+        { <small class="error"> Invalid email format </small> }
+      <input type="password" placeholder="Enter Password" formControlName="password" > 
+      @if (signupForm.controls.password.touched && signupForm.controls.password.errors?.['required']) 
+        { <small class="error"> Password is required </small> } 
+      @if (signupForm.controls.password.touched && signupForm.controls.password.errors?.['minlength']) 
+        { <small class="error"> Minimum 6 characters required </small> } 
+      <input type="password" placeholder="Confirm Password" formControlName="confirmPassword" > 
+      @if (signupForm.controls.confirmPassword.touched && signupForm.controls.confirmPassword.errors?.['required']) 
+      { <small class="error"> Confirm password is required </small> } 
+    <button type="submit"> Sign Up </button>
+      <p> Already have account?
+         <a routerLink="/">Login</a>
+     </p>
+   </form> 
+</div>

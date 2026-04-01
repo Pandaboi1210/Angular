@@ -1,0 +1,8 @@
+<button class="border-amber-500 border-2 rounded-2xl" (click)="showkart()">show Kart Items</button>
+<ul>
+  @for (item of KartItems; track item.name) {
+    <li>{{item.name}}</li>
+    <li>{{item.price}}</li>
+    <li><img src="{{item.img}}"></li>
+  }
+</ul>

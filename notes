@@ -1,0 +1,46 @@
+                                Angular
+                                =======
+
+Introduced by Google in 2009. Team leaded by miskey Henry devloped Angular.Previously it was called AngularJS.
+Angular uses Model View Controller. It uses JavaScript language. 
+
+React-> Introduced on 2013 by Meta (Facebook) used js/ts. It is a JavaScript library. Componenet type architecture.
+
+Angular 2016->It changed completly to TypeScript. It completly changed Componenet based architecture.
+
+1.Enterprise Level Applications
+2.Security 
+3.Single Page Application
+
+
+Node.js
+NPM install packagename;
+NPM i packagename;
+
+NPM---->node modules
+npm install @givingvalueof cli--->ng
+ng new project1
+current version of Angular is 21
+
+module federation-everyothers
+native federation-21
+Angular is backward compatable only after 2016 
+
+2 types of binding 
+one way and two way data binding
+Data binding connects data from differnt aaccess units 
+
+one way data binding
+  1.interpolation,{{}} comp->temp
+  2.property binding,[] comp->temp
+  3.event binding.() temp->comp
+
+two way data binding
+  1.Banna inbox [(ngmodel)]
+
+
+Componenet Communication
+
+
+
+

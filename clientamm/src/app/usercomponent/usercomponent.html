@@ -1,0 +1,10 @@
+<div class="flex-wrap flex justify-evenly">
+@for (i of userData; track i) {
+<div class="border-2 border-l-indigo-300 border-r-red-400 h-150 w-115">
+  <p>Title: {{ i.title}}</p><br>
+  <p>description : {{i.description}}</p><br>
+  <p>Price : {{i.price}}</p><br>
+  <img class="h-50 w-50" src="{{i.image}}"><br>
+</div>
+}
+</div>
