@@ -1,0 +1,46 @@
+<div class="container">
+  <form class="card" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <h2>Login</h2>
+    <input
+      type="email"
+      placeholder="Enter Email"
+      formControlName="email"
+    >
+    @if (loginForm.controls.email.touched &&
+         loginForm.controls.email.errors?.['required']) {
+      <small class="error">
+        Email is required
+      </small>
+    }
+    @if (loginForm.controls.email.touched &&
+         loginForm.controls.email.errors?.['email']) {
+      <small class="error">
+        Invalid email format
+      </small>
+    }
+    <input
+      type="password"
+      placeholder="Enter Password"
+      formControlName="password"
+    >
+    @if (loginForm.controls.password.touched &&
+         loginForm.controls.password.errors?.['required']) {
+      <small class="error">
+        Password is required
+      </small>
+    }
+    @if (loginForm.controls.password.touched &&
+         loginForm.controls.password.errors?.['minlength']) {
+      <small class="error">
+        Minimum 6 characters required
+      </small>
+    }
+    <button type="submit">
+      Login
+    </button>
+    <p>
+      Don't have account?
+      <a routerLink="/signup">Sign Up</a>
+    </p>
+  </form>
+</div>
